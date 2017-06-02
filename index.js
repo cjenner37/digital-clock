@@ -1,19 +1,7 @@
 // Get div
-var div = document.getElementById('clock')[0];
+var div = document.getElementById('clock');
 // Get body
 var body = document.getElementsByTagName('body')[0];
-
-// Get Date
-// var time = new Date();
-// // Get time
-// var hour = time.getHours();
-// var minutes = time.getMinutes();
-// var seconds = time.getSeconds();
-// // Get Hexcode
-// var color = ( "#" + hour + "" + minutes + "" + seconds);
-// console.log(color);
-
-// div.innerText = color;
 
  window.onload = function start() {
  	myFunction();

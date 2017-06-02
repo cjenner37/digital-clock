@@ -1,0 +1,52 @@
+body, html {
+	margin: 0;
+	height: 100%;
+}
+
+#digital-container {
+	background-color: white;
+	width: auto;
+	text-align: center;
+}
+
+#analog-container {
+	text-align: center;
+	margin-top: 60px;
+}
+
+#clock {
+	margin-top: 200px auto;
+	display: inline-block;
+	position: relative;
+}
+
+#hour-container, #minute-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+}
+
+#hour {
+	background-color: black;
+	width: 10px;
+	height: 100px;
+	position: absolute;
+	top: 25%;
+	left: 49.5%;
+	/* set the origin of any transformation operations to start 50% to the left of the div and 100% from the top */
+	transform-origin: 50% 100%;
+	/*transform: rotate(-30deg) translate(-14px, 30px);*/
+}
+
+#minute {
+	background-color: black;
+	width: 6px;
+	height: 140px;
+	position: absolute;
+	top: 15.6%;
+	left: 49.8%;
+	transform-origin: 50% 100%;
+}
