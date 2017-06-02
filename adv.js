@@ -16,8 +16,8 @@ function myFunction() {
 	let hours = time.getHours();
 	let minutes = time.getMinutes();
 	let seconds = time.getSeconds();
-	hourHand.style.transform = "rotate(" + (hours * 30) + "deg)";
-	minuteHand.style.transform = "rotate(" + (minutes * 6) + "deg)";
+	hourHand.style.transform = "rotate(" + ((hours * 30) + (minutes * 0.5)) + "deg)";
+	minuteHand.style.transform = "rotate(" + ((minutes * 6) + (seconds * 0.1)) + "deg)";
 	if (hours < 10) {
 		hours = "0" + hours;}
 	if (minutes < 10) {
