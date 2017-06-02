@@ -6,6 +6,8 @@ var body = document.getElementsByTagName('body')[0];
 var hourHand = document.getElementById('hour');
 // Get minute hand
 var minuteHand = document.getElementById('minute');
+// Get second hand
+var secondHand = document.getElementById('second');
 
 window.onload = function start() {
  	myFunction();
@@ -18,6 +20,7 @@ function myFunction() {
 	let seconds = time.getSeconds();
 	hourHand.style.transform = "rotate(" + ((hours * 30) + (minutes * 0.5)) + "deg)";
 	minuteHand.style.transform = "rotate(" + ((minutes * 6) + (seconds * 0.1)) + "deg)";
+	secondHand.style.transform = "rotate(" + (seconds * 6) + "deg)";
 	if (hours < 10) {
 		hours = "0" + hours;}
 	if (minutes < 10) {
@@ -31,3 +34,4 @@ function myFunction() {
 };
 
 setInterval(myFunction, 1000);
+
