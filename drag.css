@@ -1,0 +1,72 @@
+body, html {
+	margin: 0;
+	height: 100%;
+}
+
+#digital-container {
+	background-color: white;
+	width: auto;
+	text-align: center;
+}
+
+#analog-container {
+	text-align: center;
+	margin-top: 60px;
+}
+
+#clock {
+	margin-top: 200px auto;
+	display: inline-block;
+	position: relative;
+}
+
+#hour-container, #minute-container, #second-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+}
+
+#hour {
+	background-color: black;
+	position: absolute;
+	border-radius: 6px;
+	width: 10px;
+	height: 100px;
+	top: 25%;
+	left: 49.5%;
+	/* set the origin of any transformation operations to start 50% to the left of the div and 100% from the top */
+	transform-origin: 50% 100%;
+	/*transform: rotate(-30deg) translate(-14px, 30px);*/
+}
+
+#minute {
+	background-color: black;
+	position: absolute;
+	border-radius: 4px;
+	width: 6px;
+	height: 140px;
+	top: 15.6%;
+	left: 49.8%;
+	transform-origin: 50% 100%;
+}
+
+/*#second {
+	background-color: red;
+	position: absolute;
+	border-radius: 2px;
+	width: 3px;
+	height: 200px;
+	top: 11%;
+	left: 50%;
+	transform-origin: 50% 80%;
+	/*animation: rotate 60s infinite linear;*//*
+}*/
+
+/*@keyframes rotate {
+	100% {
+		transform: rotateZ(360deg);
+	}
+}*/
